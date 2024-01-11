@@ -112,10 +112,10 @@ document.addEventListener("DOMContentLoaded", async function () {
             <td>${expense.date}</td>
             <td><button class="edit-button" data-expense-id="${
               expense.id
-            }">Edit</button></td>
+            }"><img src="edit.svg"/></button></td>
             <td><button class="delete-button" data-expense-id="${
               expense.id
-            }">Delete</button></td>
+            }"><img src="del.svg"/></button></td>
           `;
           tableBody.appendChild(row);
         });
@@ -266,6 +266,13 @@ document.addEventListener("DOMContentLoaded", async function () {
 
       // Clear the form
       document.getElementById("expenseForm").reset();
+      Toastify({
+        text: "Expense Added",
+        duration: 3000,
+        gravity: "top", // or "bottom"
+        position: "center", // or "left", "center", "right"
+        backgroundColor: "#007bff",
+      }).showToast();
     }
 
     // Function to add expense to Firebase
