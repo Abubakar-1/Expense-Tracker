@@ -378,7 +378,8 @@ document.addEventListener("DOMContentLoaded", async function () {
         console.log("User is logged in:", user);
 
         const welcomeMessage = document.getElementById("welcomeMessage");
-        welcomeMessage.textContent = `Welcome, ${user.displayName.toUpperCase()}!`;
+        const actualName = user.displayName;
+        welcomeMessage.innerHTML = `Welcome, <span class="text-capitalise">${actualName}</span>!`;
 
         const expensesCollection = collection(db, "expenses");
         const q = query(
