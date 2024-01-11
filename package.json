@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "chart.js": "^4.4.1",
+    "firebase": "^10.7.1",
+    "toastify": "^2.0.1",
+    "toastify-js": "^1.12.0"
+  }
+}
