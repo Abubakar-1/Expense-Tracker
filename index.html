@@ -18,11 +18,20 @@
     <title>Expense Tracker</title>
   </head>
   <body>
+    <style>
+      @media (min-width: 768px) {
+        .card {
+          max-width: 50%;
+        }
+      }
+    </style>
     <div class="container">
-      <h1 class="text-center m-5">Welcome to the Expense Tracker!</h1>
+      <h1 class="text-center m-2 m-md-3 fs-3">
+        Welcome to the Expense Tracker!
+      </h1>
 
       <div class="forms">
-        <div class="card" style="max-width: 50%; display: none" id="signUp">
+        <div class="card" style="display: none" id="signUp">
           <h2 class="h2 font-bold mb-4 text-center">Sign Up</h2>
 
           <div id="signupMessage"></div>
@@ -63,16 +72,20 @@
               required
             />
 
-            <div class="footer d-flex justify-content-between">
+            <div class="footer d-md-flex justify-content-between">
               <button type="button" id="signupBtn">Sign Up</button>
-              <div onclick="showForm()" style="color: blue; cursor: pointer">
+              <div
+                onclick="showForm()"
+                class="my-3 my-md-0"
+                style="color: blue; cursor: pointer"
+              >
                 Already have an account?
               </div>
             </div>
           </form>
         </div>
 
-        <div class="card" style="max-width: 50%" id="login">
+        <div class="card" id="login">
           <h2 class="h2 font-bold mb-4 text-center">Login</h2>
 
           <div id="loginMessage"></div>
@@ -84,9 +97,13 @@
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required />
 
-            <div class="footer d-flex justify-content-between">
+            <div class="footer d-md-flex justify-content-between">
               <button type="button" id="loginBtn">Login</button>
-              <div onclick="showSignUp()" style="color: blue; cursor: pointer">
+              <div
+                onclick="showSignUp()"
+                class="my-3 my-md-0"
+                style="color: blue; cursor: pointer"
+              >
                 New? Register
               </div>
               <p

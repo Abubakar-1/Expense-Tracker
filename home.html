@@ -65,7 +65,7 @@
       }
     </style>
     <div class="container">
-      <div class="head m-3">
+      <!-- <div class="head m-3">
         <p id="welcomeMessage"></p>
         <div class="profile-button" id="profileButton">
           <button>Your Profile</button>
@@ -74,9 +74,56 @@
             <a href="#" id="signOutBtn">Sign Out</a>
           </div>
         </div>
-      </div>
+      </div> -->
+
+      <nav class="navbar navbar-expand-lg pt-3 pb-3">
+        <div class="container-fluid mb-2">
+          <div class="">
+            <a class="navbar-brand" href="#"><img src="/logo.svg" alt="" /></a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            style="width: 75%"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item pe-4">
+                  <div class="profile-button" id="profileButton">
+                    <button>Your Profile</button>
+                    <div class="profile-popup" id="profilePopup">
+                      <a href="#" id="viewProfile">View Profile</a>
+                      <a href="#" id="signOutBtn">Sign Out</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
       <div class="header">
-        <h1 class="display-4">Expense Tracker</h1>
+        <h3 id="welcomeMessage"></h3>
       </div>
 
       <div class="row">

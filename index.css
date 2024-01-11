@@ -128,6 +128,17 @@ button:hover {
   }
 }
 
+/* @media (max-width: 425px) {
+  .footer {
+    display: block;
+  }
+  #loginBtn,
+  #signupBtn,
+  .register {
+    display: block;
+  }
+} */
+
 /* Add these styles to your existing styles or in a new style block */
 .chart-container {
   display: inline-block;
