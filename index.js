@@ -54,6 +54,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const confirmPassword = signupConfirmPasswordInput.value;
     const phoneNumber = signupPhoneNumberInput.value;
 
+    if (!fullName || !email || !phoneNumber || !password) {
+      alert("Fill all fields");
+      return;
+    }
+
     if (password !== confirmPassword) {
       alert("Passwords do not match.");
       return;
